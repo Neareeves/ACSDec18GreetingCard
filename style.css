@@ -1,0 +1,344 @@
+/*********************général*********************/
+#imagesvg {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  /*background-color: rgba(155, 162, 166,0.4);*/
+  background-color: #303030;
+}
+
+
+/***********************snow:**********************/
+
+.illustration {
+  position: relative;
+  margin: 0 auto;
+  width : 1000px;
+  height: 1000px;
+  z-index: 300;
+}
+
+.i-large,
+.i-medium,
+.i-small {
+  position : absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.i-large {
+  background: url("grosfloc.png") repeat 30px 5px;
+  -webkit-animation: dropFlowParticles 3s linear infinite;
+  -o-animation: dropFlowParticles 3s linear infinite;
+  animation: dropFlowParticles 3s linear infinite;
+}
+.i-medium {
+  background: url("grosfloc1.png") repeat 0px 0px;
+  -webkit-animation: dropFlowParticles 7s linear infinite;
+  -o-animation: dropFlowParticles 7s linear infinite;
+  animation: dropFlowParticles 7s linear infinite;
+}
+.i-small {
+  background:url("grosfloc3.png") repeat 0px 0px;
+  -webkit-animation: dropFlowParticles 12s linear infinite;
+  -o-animation: dropFlowParticles 12s linear infinite;
+  animation: dropFlowParticles 12s linear infinite;
+}
+
+@-webkit-keyframes dropFlowParticles {
+  from { background-position: 0 0; }
+  to { background-position: 0 413px; }
+}
+@keyframes dropFlowParticles {
+  from { background-position: 0 0; }
+  to { background-position: 0 413px; }
+}
+
+
+/*********************** autres fonctions *******************************
+
+.test {
+  transition-property:translate(500px, 500px) ;
+  transition-duration:3s;
+  transition-timing-function: cubic-bezier(3);
+  transition-delay: 2s;
+  animation: mouvement 20s linear 2s alternate infinite;;
+  }*/
+
+  @keyframes mouvement { 
+    0% {
+      left: 0%;
+    }
+    30% {
+      transform: rotate(90deg);
+      left: 75%;
+      top: 25%;
+    }
+    100% {
+      transform: rotate(90deg);
+      left: 75%;
+      top: 50%;
+    }
+  }
+
+  @keyframes tombefond { 
+    0% {
+      fill: #3C4360;
+      transform: translateY(-100px);
+    }
+    100% {
+      fill: #3C3C3C;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes tombelune { 
+    0% {
+
+      transform: translateY(-2000px);
+    }
+    100% {
+
+      transform: translateY(0px);
+    }
+  }
+  @keyframes tombesapin { 
+    0% {
+
+      transform: translateY(2000px);
+    }
+    100% {
+
+      transform: translateY(0px);
+    }
+  }
+  @keyframes tombeneige { 
+    0% {
+
+      transform: translateY(-250px);
+    }
+    100% {
+
+      transform: translateY(0px);
+    }
+  }
+
+  @-moz-keyframes couleur-anim {
+    0%  {fill: #65537A}
+    25% {fill: #729EBF}
+    50% {fill: #F6AD1A}
+    75% {fill: #729EBF}
+  }   
+
+  @keyframes deplacementSanta {
+    0% {
+      /*transform-origin: 50% 50%;*/
+      transform: scale(0) translateX(0) translateY(0);
+
+    }
+    30% {
+     transform: scale(0.3) translateX(25) translateY(25);
+   }
+   70% {
+    transform: scale(1) translateX(50) translateY(25) ;
+  }
+
+
+  100% {
+   transform: scale(3) translateX(0%) translateY(25);
+ }
+}
+
+@keyframes texteTombe {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+@keyframes dash {
+  100% { 
+    motion-offset: 100%;   /* Old */
+    offset-distance: 100%; /* New */
+  }
+}
+@keyframes wolfs {
+  0% {
+
+    transform: translateX(600px) translateY(0);
+  }
+  10% {
+
+    transform: translateX(400px)translateY(-100);
+  }
+  20% {
+    transform: translateX(300px) translateY(0);
+  }
+  30%{
+    transform: translateX(200px)translateY(+100);
+  }
+  40% {
+    transform: translateY(-50);
+  }
+  50% {
+    transform: translateY(0);
+  }
+   100% {
+    transform: translateY(0);
+  }
+}
+@keyframes walkingWolf {
+  0% {
+display:none;
+transform: translateX(500px) translateY(0);
+  }
+  20% {
+display:block;
+transform: translateX(400px)translateY(-100);
+  }
+  40% {
+display:none;
+ transform: translateX(300px) translateY(0);
+  }
+  60% {
+display:block;
+ transform: translateX(200px)translateY(+100);
+  }
+  80% {
+display:none;
+ transform: translateY(-50);
+  }
+  100% {
+display:block;
+ transform: translateY(0);
+  }
+}
+/*******************éléments à animer*******************/;
+.rectfond-hiver {
+ /* animation-name: mouvement;
+  animation-duration: 50s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;*/
+}
+
+
+#fond_hiver {
+   animation: mouvement 30s linear 3s;
+}
+
+.rectfond45-hiver {
+  animation: mouvement 70s linear 4s;
+}
+.fondhiver3 {
+  animation: mouvement 70s linear 7s;
+}
+.fondhiver2 {
+ animation: mouvement 70s linear 10s
+}
+.fronthiver {
+ animation: mouvement 70s linear 13s
+}
+/*  div{
+    background-color: deeppink;
+    box-shadow: 0 200px 100px -100px white inset; 
+    transition: box-shadow 1s;
+    }*/
+
+    .moon {
+      animation: tombelune 7s linear 0s;
+    }
+
+    
+
+
+    .perenoel {
+/* offset-path: path('M23.299,0C0,0,1333.068,122.141,1366.384,247.449, S410.454,516.594,429.953,743.26s1159.746-79.32,1200.092,172.668S742.504,1393.395,757.97,1589.64, s425.906,148.045,425.906,148.045');
+animation: dash 5s linear infinite;*/
+animation: deplacementSanta 11s ease 0s;
+}
+
+.texte {
+  animation: tombelune 9s linear 0s;
+}
+
+.flocon {
+  display: none;
+  /* animation: scintillementFlocons 10s linear 0s infinite;*/
+}
+
+
+#sapindeco {
+  animation: tombesapin 4s ease-in-out 0s;
+}
+#neige_maison {
+  animation: tombeneige 2s linear 0s;
+}
+#neige_maison_2{
+  animation: tombeneige 1s linear 0s;
+}
+
+#pas1 {
+  animation: wolfs 10s ease-in-out 18s 1;
+}
+#loup1 {
+  animation: wolfs 8s ease-in 7s 2;
+}
+#yellingwolf{
+
+}
+#loupanime {
+   animation: wolfs 15s ease-in-out 10s 2;
+}
+/**********************formulaire******************/
+section {
+  text-align: center;
+  font-family: 'Cormorant Upright', serif;
+  color: #b6e1f2;
+  font-size: 1.3em;
+}
+
+input, textarea {
+background-color: #3c4360;
+border-radius: 5px;
+border-color: #b6e1f2;
+color: #b6e1f2;
+}
+input[type='submit'] {
+  background-color: #b6e1f2;
+color: #303030;
+font-family: 'Cormorant Upright', serif;
+font-size: 1.3em;
+}
+table {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 350px;
+
+}
+/**********************************/ 
+/*****************media queries*****************/ 
+@media all and (max-width: 999px) {
+  .illustration {
+    width : 800px;
+    height: 800px;
+  }
+}
+@media all and (max-width: 699px) {
+  .illustration {
+    width : 600px;
+    height: 600px;
+  }
+}
+@media all and (max-width: 599px) {
+  .illustration {
+    width : 460px;
+    height: 460px;
+  }
+}

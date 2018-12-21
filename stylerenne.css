@@ -1,0 +1,159 @@
+#cadre {
+	width: 500px;
+	height: 500px;
+	border-color: #A15D39;
+
+}
+#tete {
+	position: relative;
+	width: 500px;
+	height: 500px;
+}
+.tetehaut {
+	position: absolute;
+	background-color: #A15D39;
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+
+	z-index: 4;
+}
+.tetebas{
+	position: absolute;
+	background-color: #A15D39;
+	-webkit-clip-path: ellipse(16% 40% at 53% 58%);
+	clip-path: ellipse(16% 40% at 53% 58%);
+	top: 48%;
+	height: 40%;
+	width: 80%;
+	left: 8%;
+	z-index: -1;
+	
+}
+
+.oreillelo {
+	position: absolute;
+	background-color: red;
+	-webkit-clip-path: polygon(19% 17%, 0 0, 28% 4%, 43% 20%);
+	clip-path: polygon(19% 17%, 0 0, 28% 4%, 43% 20%);
+	width: 50%;
+	height: 50%;
+	left: 10%;
+}
+.oreilledo {
+	position: absolute;
+	background-color: red;
+	-webkit-clip-path: polygon(74% 5%, 100% 0, 85% 19%, 54% 28%);
+	clip-path: polygon(74% 5%, 100% 0, 85% 19%, 54% 28%);
+	width: 50%;
+	height: 50%;
+	right: 10%;
+
+}
+.oreilleli {
+	position: absolute;
+	background-color: blue;
+	-webkit-clip-path: polygon(8% 11%, 0 0, 18% 2%, 24% 15%);
+	clip-path: polygon(8% 11%, 0 0, 18% 2%, 24% 15%);
+	width: 70%;
+	height: 70%;
+	left: 10%;
+	top: 5%;
+}
+.oreilledi {
+	position: absolute;
+	background-color: blue;
+	-webkit-clip-path: polygon(74% 5%, 92% 3%, 81% 15%, 61% 18%);
+	clip-path: polygon(74% 5%, 92% 3%, 81% 15%, 61% 18%);
+	width: 70%;
+	height: 70%;
+	right: 10%;
+	top: 7%;
+}
+.leo {
+	position: absolute;
+	background-color: #FFF;
+	border-radius: 50%;
+	width: 25%;
+	height: 25%;
+	top: 20%;
+	left: 13%;
+}
+.lei {
+	position: absolute;
+	background-color: #271883;
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+}
+.reo {
+	position: absolute;
+	background-color: #FFF;
+	border-radius: 50%;
+	width: 25%;
+	height: 25%;
+	top: 20%;
+	right: 13%;
+}
+.rei {
+	position: absolute;
+	background-color:#271883;
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;	
+}
+.boisoutL {
+	position: absolute;
+	background-color: rgba(146, 48, 38, 1);
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	top: 0%;
+	left: 25%;
+}
+.boisinL {
+	position: absolute;
+	background-color: #FFF;
+	border-radius: 50%;
+	width: 45%;
+	height: 50%;
+	top: -3%;
+	left: 29%;
+}
+.boisoutR {
+	position: absolute;
+	background-color: rgba(146, 48, 38, 1);
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	top: 0%;
+	right: 22%;
+	z-index: 0;
+}
+.boisinR {
+	position: absolute;
+	background-color: #FFF;
+	border-radius: 50%;
+	width: 45%;
+	height: 50%;
+	top: -3%;
+	right: 30%;
+	z-index: 0;
+	
+}
+.noze {
+	position: absolute;
+	background-color: #8A4107;
+	border-radius: 50%;
+	width: 20%;
+	height: 20%;
+	bottom: 0%;
+left: 30%;
+	z-index: 10;
+}
